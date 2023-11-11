@@ -1,0 +1,15 @@
+{
+  "name": "text-summarizer",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "author": "Akshaj Rao <<akshajrao2004@gmail.com>>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.9.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "got": "^13.0.0",
+    "openai": "^4.17.4"
+  }
+}
