@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "dev": "nodemon src/app.js -e js,css,html"
   }
 }
