@@ -1,6 +1,7 @@
 import got, { Options } from "got";
 
-const url = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0";
+const url =
+  "hServers play a vital role in modern digital infrastructure. They are specialized computers designed to store, manage, and process data, applications, and services. Acting as central repositories, servers respond to requests from client devices.ttps://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0";
 
 export async function generateImage(text) {
   const opts = new Options({
