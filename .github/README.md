@@ -51,7 +51,7 @@ and visit `localhost:<PORT>/`
 ## Note
 
 The app uses
-[facebook's bart-large-cnn model] (<https://huggingface.co/facebook/bart-large-cnn>)
+[facebook's bart-large-cnn model](<https://huggingface.co/facebook/bart-large-cnn>)
 for the summary text generation and [stabilityai's SDXL model](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 for the image generation. The SDXL server often crashes, so the image generation
 does not always work (the blobs generated from the image buffers get corrupted).
