@@ -3,6 +3,8 @@ import got, { Options } from "got";
 const url = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0";
 
 export async function generateImage(text) {
+  const words = text.split(/\s+/);
+  const truncatedText = words.slice(0, 20).join(" ");
   const opts = new Options({
     headers: {
       "Content-Type": "application/json",
@@ -10,7 +12,7 @@ export async function generateImage(text) {
     },
     method: "POST",
     body: JSON.stringify({
-      inputs: text,
+      inputs: truncatedText,
     }),
     responseType: "buffer",
     throwHttpErrors: false,
