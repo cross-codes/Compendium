@@ -1,6 +1,7 @@
 const textArea = document.getElementById("text_to_summarize");
 const submitButton = document.getElementById("submit-button");
 const summarizedTextArea = document.getElementById("summary");
+const keywordArea = document.getElementById("keyword");
 
 submitButton.disabled = true;
 
@@ -33,8 +34,9 @@ async function submitData(_) {
 
   try {
     const response = await fetch("/summarize", opts);
-    const summary = await response.json();
-    summarizedTextArea.value = summary[0].summary_text;
+    const { summarizedText, keywordString } = await response.json();
+    summarizedTextArea.value = summarizedText[0].summary_text;
+    keywordArea.value = keywordString;
   } catch (error) {
     console.error("Error:", error.message);
   } finally {

@@ -9,8 +9,9 @@
   </head>
   <body>
     <h1>Text Summarizer</h1>
-    <p> Welcome to the Text Summarizer App! This app leverages the power of AI APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you. </p>
-    <p> Paste your text into the text area below and click the "Summarize" button. </p>
+    <p> Welcome to the Text Summarizer App! This app can provide concise summaries of long texts. </p>
+    <p> To use the app, paste any article or text document that you want to summarize quickly in the 
+      text area below and click the "Summarize" button. </p>
     <div class="container">
       <div class="text-box">
         <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
@@ -19,7 +20,10 @@
         </button>
       </div>
       <div class="text-box">
-        <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here" readonly> </textarea>
+        <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here" readonly></textarea>
+      </div>
+      <div class="text-box">
+        <textarea id="keyword" name="keyword_text" placeholder="Important Keywords will appear here" readonly></textarea>
       </div>
     </div>
     <script src="script.js"></script>
