@@ -7,6 +7,9 @@ APIs at [Hugging Face](https://huggingface.co/) and NodeJS
 ![demo](./img/demo.png)
 
 Current version : 1.0
+
+Project done for the completion of the Postman API certification course.
+
 </div>
 
 ---
