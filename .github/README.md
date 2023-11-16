@@ -1,6 +1,18 @@
 <div align="center">
 <h1>⛰️Compendium v1.0</h1>
 
+<div style="margin-right: 20px; display: inline-block;">
+    <img src="./img/postman-badge.png" width="150" height="150">
+</div>
+
+<div style="margin-right: 20px; display: inline-block;">
+    <img src="./img/banner.png" width="130" height="130">
+</div>
+
+<div style="display: inline-block;">
+    <img src="./img/postman-badge.png" width="150" height="150">
+</div>
+
 A text-summarizing and text-to-image converting web application powered by the
 APIs at [Hugging Face](https://huggingface.co/) and NodeJS
 
