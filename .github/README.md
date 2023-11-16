@@ -9,7 +9,7 @@
     <img src="./img/banner.png" width="72" height="72">
 </div>
 
-<div style="display: inline-block;">
+<div style="display: inline-block; margin-right: 20px;">
     <img src="./img/postman-badge.png" width="72" height="72">
 </div>
 
