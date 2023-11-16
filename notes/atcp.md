@@ -65,3 +65,17 @@ gives the element that triggers the event.
 The purpose of the `script.js` file is as follows: Scripts allow our page to be dynamic,
 such as responding to clicked buttons, changing styles and updating text on the page.
 Callback functions tell our app what to do when those events happen
+
+## (4) Additional - Adding the text-to-image converter
+
+First withing the same div as the textareas, I made an empty image tag, where
+the image would be displayed. Then I added some attributes to the image class in
+`styles.css`, and made a similar `POST` request to the image generation API.
+
+The library I used `got`, can accept a response type of a `buffer`. This was passed
+to the client side script, where the buffer's `data` method was converted into a
+UInt8Array, which was then converted into a blob, whose URL was rendered within
+the box.
+
+It is necessary to create `new` instances of the array and blob in the client
+side script because of their lifetimes.

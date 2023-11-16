@@ -10,7 +10,7 @@ services across applications, organizations and devices.
 
 ### Analogy with a restaurant
 
-![Restaurant analogy](../img/analogy.png)
+![Restaurant analogy](./img/analogy.png)
 
 ---
 The term API can refer to a broad range of interfaces
@@ -78,7 +78,7 @@ Paths and complete URLs are sometimes called API endpoints.
 
 Status codes are indicators of whether a request failed or succeeded.
 
-![Response status codes](../img/status_codes.png)
+![Response status codes](./img/status_codes.png)
 
 ---
 
