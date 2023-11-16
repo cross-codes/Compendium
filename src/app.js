@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 import express from "express";
 import path from "path";
 import { generateImage } from "./utils/images.js";
-import { generateKeywords } from "./utils/keywords.js";
 import { summarizeText } from "./utils/summarize.js";
 
 dotenv.config();
