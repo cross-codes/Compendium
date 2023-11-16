@@ -36,8 +36,9 @@ async function submitData(_) {
     const response = await fetch("/summarize", opts);
     const { summarizedText, imageBuffer } = await response.json();
 
-    const uint8imageArray = new Uint8Array(imageBuffer.data);
-    const imageBlob = new Blob([uint8imageArray], { type: "image/jpeg" });
+    const imageArray = new Uint8Array(imageBuffer.data);
+    const imageBlob = new Blob([imageArray], { type: "image/jpeg" });
+
     summarizedTextArea.value = summarizedText;
     imageArea.src = URL.createObjectURL(imageBlob);
   } catch (error) {
