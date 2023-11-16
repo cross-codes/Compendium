@@ -2,15 +2,7 @@
 <h1>⛰️Compendium v1.0</h1>
 
 <div style="margin-right: 20px; display: inline-block;">
-    <img src="./img/postman-badge.png" width="72" height="72">
-</div>
-
-<div style="margin-right: 20px; display: inline-block;">
-    <img src="./img/banner.png" width="72" height="72">
-</div>
-
-<div style="display: inline-block; margin-right: 20px;">
-    <img src="./img/postman-badge.png" width="72" height="72">
+    <img src="./img/banner.png" width="130" height="130">
 </div>
 
 A text-summarizing and text-to-image converting web application powered by the
@@ -21,6 +13,10 @@ APIs at [Hugging Face](https://huggingface.co/) and NodeJS
 Current version : 1.0
 
 Project done for the completion of the Postman API certification course.
+
+<div style="display: inline-block; margin-right: 20px;">
+    <img src="./img/postman-badge.png" width="72" height="72">
+</div>
 
 </div>
 
