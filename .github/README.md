@@ -2,15 +2,15 @@
 <h1>⛰️Compendium v1.0</h1>
 
 <div style="margin-right: 20px; display: inline-block;">
-    <img src="./img/postman-badge.png" width="150" height="150">
+    <img src="./img/postman-badge.png" width="72" height="72">
 </div>
 
 <div style="margin-right: 20px; display: inline-block;">
-    <img src="./img/banner.png" width="130" height="130">
+    <img src="./img/banner.png" width="72" height="72">
 </div>
 
 <div style="display: inline-block;">
-    <img src="./img/postman-badge.png" width="150" height="150">
+    <img src="./img/postman-badge.png" width="72" height="72">
 </div>
 
 A text-summarizing and text-to-image converting web application powered by the
