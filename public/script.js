@@ -1,7 +1,7 @@
 const textArea = document.getElementById("text_to_summarize");
 const submitButton = document.getElementById("submit-button");
 const summarizedTextArea = document.getElementById("summary");
-const keywordArea = document.getElementById("keyword");
+const imageArea = document.getElementById("summary-image");
 
 submitButton.disabled = true;
 
@@ -34,9 +34,12 @@ async function submitData(_) {
 
   try {
     const response = await fetch("/summarize", opts);
-    const { summarizedText, keywordString } = await response.json();
-    summarizedTextArea.value = summarizedText[0].summary_text;
-    keywordArea.value = keywordString;
+    const { summarizedText, imageBuffer } = await response.json();
+
+    const uint8imageArray = new Uint8Array(imageBuffer.data);
+    const imageBlob = new Blob([uint8imageArray], { type: "image/jpeg" });
+    summarizedTextArea.value = summarizedText;
+    imageArea.src = URL.createObjectURL(imageBlob);
   } catch (error) {
     console.error("Error:", error.message);
   } finally {

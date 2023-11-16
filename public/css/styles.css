@@ -169,3 +169,20 @@ textarea {
     transform: rotate(1turn);
   }
 }
+
+.image-box {
+  flex-shrink: 0;
+  width: 400px;
+  border: 1px solid #6e6f70;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: initial;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
